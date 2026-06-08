@@ -23,9 +23,8 @@ window.CONFIG = {
   // site). Swap for a couple portrait anytime: drop a file in assets/ + point here.
   couplePhoto: "assets/venue-namedy.jpg",
 
-  // ↓↓↓ PASTE your Apps Script Web-App URL here after running SETUP.md ↓↓↓
-  // It looks like: https://script.google.com/macros/s/AKfyc.../exec
-  uploadUrl: "",
+  // Apps Script Web-App endpoint (tested live ✓).
+  uploadUrl: "https://script.google.com/macros/s/AKfycbxwFIXXNJpeJIb3WYoAWBU-uT2GsPjBozwIb_hpvNTQqYvXVOxW2zrTIpurraIT-yDMpw/exec",
 
   // Shared word that must match TOKEN in apps-script/Code.gs.
   // Just light spam protection — change it to anything you like (both places).
