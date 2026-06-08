@@ -207,6 +207,8 @@
           'onerror="this.onerror=null;this.src=\'assets/couple-placeholder.svg\'">' +
         '<p class="kicker">' + esc(t("tagline")) + "</p>" +
         "<h1>" + esc(t("welcomeTitle", { couple: CONFIG.coupleNames })) + "</h1>" +
+        (CONFIG.event ? '<p class="event-line">' + esc(CONFIG.event.date[state.lang]) +
+          " · " + esc(CONFIG.event.venue) + "</p>" : "") +
         '<p class="muted">' + esc(t("welcomeIntro")) + "</p>" +
         '<span class="rule">' + esc(t("welcomeRule")) + "</span>" +
         '<p class="deadline">' + esc(t("deadlinePrefix")) + " <strong>" +

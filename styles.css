@@ -1,17 +1,22 @@
 /* ─── Palette & base ─────────────────────────────────────────────────────── */
 :root {
-  --cream: #fbf6f1;
-  --card: #ffffff;
-  --ink: #43352f;
-  --ink-soft: #8a766c;
-  --rose: #b06a5a;
-  --rose-dark: #97564a;
-  --rose-tint: #f4e3dc;
-  --line: #ecdcd3;
-  --shadow: 0 12px 30px rgba(124, 78, 61, 0.12);
+  /* Palette matched to Judith & Sven's WithJoy theme (cream / aubergine / sage).
+     Variable names are historical; values are the wedding brand. All text pairs
+     verified WCAG AA — see test/contrast.mjs. */
+  --cream: #f5f4ef;       /* page background (their exact cream) */
+  --card: #ffffff;        /* card surface */
+  --ink: #2a2233;         /* primary text (plum-black) */
+  --ink-soft: #6b6275;    /* muted text */
+  --rose: #361e55;        /* ACCENT — deep aubergine: buttons + headings + brand */
+  --rose-dark: #271341;   /* accent hover */
+  --rose-tint: #d2d9cd;   /* sage — chips / fills (only ever carries plum text) */
+  --line: #e3e1da;        /* hairline inside cards */
+  --shadow: 0 12px 30px rgba(54, 30, 85, 0.12); /* soft plum-tinted lift */
+  --decor-pink: #f2547a;  /* signature pink — DECORATIVE ONLY (fails AA for text) */
+  --field-border: #9a948a;/* visible form-control border (3:1 non-text) */
   --radius: 18px;
-  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Playfair Display", Georgia, "Times New Roman", "Songti SC", serif;
+  --sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -77,8 +82,8 @@ body {
 
 .footer {
   text-align: center;
-  color: var(--rose);
-  opacity: 0.5;
+  color: var(--decor-pink);
+  opacity: 0.8;
   padding: 8px 0 calc(14px + env(safe-area-inset-bottom));
   font-size: 14px;
 }
@@ -104,7 +109,9 @@ h1 {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+  color: var(--rose);
   margin: 0 0 12px;
   text-align: center;
 }
@@ -112,6 +119,8 @@ h2 {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 24px;
+  letter-spacing: 0.01em;
+  color: var(--rose);
   margin: 0 0 6px;
 }
 p { line-height: 1.55; color: var(--ink); margin: 0 0 14px; }
@@ -145,6 +154,17 @@ p { line-height: 1.55; color: var(--ink); margin: 0 0 14px; }
   margin: 0 0 18px;
 }
 .deadline strong { color: var(--ink); }
+
+/* date · venue line under the couple's name on the welcome card */
+.event-line {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--rose);
+  margin: 0 0 16px;
+}
 
 /* ─── Buttons ─────────────────────────────────────────────────────────────── */
 .btn {
@@ -181,15 +201,16 @@ label.field { display: block; margin-bottom: 16px; }
 .field-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
 input[type="text"], input[type="email"], textarea {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1px solid var(--field-border);
   border-radius: 12px;
   padding: 13px 14px;
   font-size: 16px;     /* 16px avoids iOS zoom-on-focus */
   font-family: var(--sans);
-  background: #fffdfc;
+  background: var(--card);
   color: var(--ink);
 }
-input:focus, textarea:focus { outline: 2px solid var(--rose-tint); border-color: var(--rose); }
+input:focus, textarea:focus { outline: none; border-color: var(--rose); box-shadow: 0 0 0 3px rgba(54, 30, 85, 0.18); }
+input::placeholder, textarea::placeholder { color: var(--ink-soft); font-style: italic; opacity: 1; }
 textarea { resize: none; min-height: 52px; }
 .error { color: #b3372b; font-size: 14px; margin: -6px 0 12px; min-height: 18px; }
 
@@ -203,10 +224,10 @@ textarea { resize: none; min-height: 52px; }
 .dot {
   width: 9px; height: 9px;
   border-radius: 50%;
-  background: var(--line);
+  background: var(--rose-tint);        /* sage — not yet reached */
 }
-.dot.filled { background: var(--rose); }
-.dot.current { background: var(--rose); box-shadow: 0 0 0 4px var(--rose-tint); }
+.dot.filled { background: var(--rose); }  /* plum — has a photo */
+.dot.current { background: var(--decor-pink); box-shadow: 0 0 0 4px rgba(242, 84, 122, 0.18); }
 
 .counter { text-align: center; font-size: 13px; color: var(--ink-soft); letter-spacing: 0.4px; margin-bottom: 8px; }
 .prompt-text {

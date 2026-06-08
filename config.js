@@ -6,16 +6,22 @@ window.CONFIG = {
   // Shown in the header and intro text.
   coupleNames: "Judith & Sven",
 
-  // Submission deadline, shown on the welcome screen (free text per language).
-  // ↓↓↓ CHANGE THESE to the real deadline ↓↓↓
-  deadline: {
-    de: "15. August 2026",
-    en: "August 15, 2026",
+  // The wedding itself — shown on the welcome screen.
+  event: {
+    date: { de: "8. August 2026", en: "August 8, 2026" },
+    venue: "Schloss Namedy",
   },
 
-  // Landing photo of the couple. Drop a file into assets/ and point to it here,
-  // e.g. "assets/couple.jpg". A placeholder is used until you do.
-  couplePhoto: "assets/couple-placeholder.svg",
+  // Photo-submission deadline ("please by …"). A week before the wedding gives
+  // time to build the slideshow. ↓↓↓ adjust if you like ↓↓↓
+  deadline: {
+    de: "31. Juli 2026",
+    en: "July 31, 2026",
+  },
+
+  // Landing photo. Defaults to the Schloss Namedy courtyard (from the wedding
+  // site). Swap for a couple portrait anytime: drop a file in assets/ + point here.
+  couplePhoto: "assets/venue-namedy.jpg",
 
   // ↓↓↓ PASTE your Apps Script Web-App URL here after running SETUP.md ↓↓↓
   // It looks like: https://script.google.com/macros/s/AKfyc.../exec

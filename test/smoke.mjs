@@ -30,6 +30,8 @@ const click = (id) => doc.getElementById(id).click();
 // 1. Welcome renders in German
 assert(/Wir sammeln Erinnerungen/.test(stage()), "welcome shows German tagline");
 assert(!!doc.getElementById("startBtn"), "welcome has start button");
+assert(/8\. August 2026/.test(stage()), "welcome shows the wedding date");
+assert(/Schloss Namedy/.test(stage()), "welcome shows the venue");
 
 // 2. Language toggle → English, then back
 click("langToggle");
