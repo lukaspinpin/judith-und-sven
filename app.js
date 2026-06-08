@@ -210,7 +210,6 @@
         (CONFIG.event ? '<p class="event-line">' + esc(CONFIG.event.date[state.lang]) +
           " · " + esc(CONFIG.event.venue) + "</p>" : "") +
         '<p class="muted">' + esc(t("welcomeIntro")) + "</p>" +
-        '<span class="rule">' + esc(t("welcomeRule")) + "</span>" +
         '<p class="deadline">' + esc(t("deadlinePrefix")) + " <strong>" +
           esc(CONFIG.deadline[state.lang]) + "</strong></p>" +
         '<button class="btn btn-primary" id="startBtn">' + esc(t("startBtn")) + "</button>" +

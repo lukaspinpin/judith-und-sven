@@ -32,6 +32,7 @@ assert(/Wir sammeln Erinnerungen/.test(stage()), "welcome shows German tagline")
 assert(!!doc.getElementById("startBtn"), "welcome has start button");
 assert(/8\. August 2026/.test(stage()), "welcome shows the wedding date");
 assert(/Burg Namedy/.test(stage()), "welcome shows the venue");
+assert(!/Pro Frage ein Foto/.test(stage()), "old 'one photo per prompt' chip is gone");
 
 // 2. Language toggle → English, then back
 click("langToggle");

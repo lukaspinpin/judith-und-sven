@@ -6,7 +6,6 @@ window.I18N = {
     welcomeTitle: "Eure Fotos für {couple}",
     welcomeIntro:
       "Zur Hochzeit basteln wir eine kleine Foto-Überraschung für Judith und Sven – aus euren schönsten gemeinsamen Momenten. Lade ein bis sechs Lieblingsfotos hoch und teile die Erinnerungen dazu: so viel oder so wenig du möchtest, ganz wie du magst. Keine Anmeldung, dauert nur ein bis zwei Minuten – und hilft uns, den beiden etwas ganz Besonderes zu schenken.",
-    welcomeRule: "Pro Frage ein Foto – wähle einfach deine Favoriten.",
     deadlinePrefix: "Bitte bis",
     startBtn: "Los geht’s",
 
@@ -58,7 +57,6 @@ window.I18N = {
     welcomeTitle: "Your photos for {couple}",
     welcomeIntro:
       "For the wedding we’re putting together a little photo surprise for Judith and Sven — made of your favorite moments with them. Upload one to six photos and share the memories behind them: as much or as little as you like, totally up to you. No sign-up, just one or two minutes — and it helps us make them something really special.",
-    welcomeRule: "One photo per prompt — just pick your favorites.",
     deadlinePrefix: "Please by",
     startBtn: "Let’s go",
 
