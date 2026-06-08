@@ -291,6 +291,7 @@
           '<button class="btn btn-ghost" id="prevBtn">' + esc(t("backBtn")) + "</button>" +
           '<button class="btn btn-primary" id="nextBtn">' + esc(rightLabel) + "</button>" +
         "</div>" +
+        '<p class="step-hint">' + esc(t("uploadHint")) + "</p>" +
       "</div>";
 
     var fileInput = document.getElementById("fileInput");

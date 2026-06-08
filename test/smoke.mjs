@@ -55,6 +55,7 @@ nameInput.dispatchEvent(new window.Event("input"));
 click("contBtn");
 assert(/Dein Lieblingsfoto mit Judith/.test(stage()), "continue reaches prompt 1 (fav with Judith)");
 assert(/Foto 1 von 6/.test(stage()), "prompt counter shows 1 of 6");
+assert(/erst am Ende/.test(stage()), "prompt step shows the upload hint");
 
 // 6. Skip through to review (no photos) → empty-state guard
 for (let i = 0; i < 6; i++) click("nextBtn");
