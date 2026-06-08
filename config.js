@@ -15,8 +15,8 @@ window.CONFIG = {
   // Photo-submission deadline ("please by …"). A week before the wedding gives
   // time to build the slideshow. ↓↓↓ adjust if you like ↓↓↓
   deadline: {
-    de: "31. Juli 2026",
-    en: "July 31, 2026",
+    de: "30. Juni 2026",
+    en: "June 30, 2026",
   },
 
   // Landing photo. Defaults to the Schloss Namedy courtyard (from the wedding

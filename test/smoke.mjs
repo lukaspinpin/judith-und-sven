@@ -53,10 +53,10 @@ nameInput.value = "Tom Müller";
 nameInput.dispatchEvent(new window.Event("input"));
 click("contBtn");
 assert(/Dein Lieblingsfoto mit Judith/.test(stage()), "continue reaches prompt 1 (fav with Judith)");
-assert(/Foto 1 von 7/.test(stage()), "prompt counter shows 1 of 7");
+assert(/Foto 1 von 6/.test(stage()), "prompt counter shows 1 of 6");
 
 // 6. Skip through to review (no photos) → empty-state guard
-for (let i = 0; i < 7; i++) click("nextBtn");
+for (let i = 0; i < 6; i++) click("nextBtn");
 assert(/noch kein Foto ausgewählt/.test(stage()), "review with zero photos shows empty guard");
 
 console.log(`\nALL ${passed} CHECKS PASSED`);

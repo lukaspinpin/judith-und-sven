@@ -114,6 +114,5 @@ window.PROMPTS = [
   { key: "first-judith", prefix: "03-first-judith", de: "Dein erstes Foto mit Judith",                                en: "Your first photo with Judith" },
   { key: "first-sven",   prefix: "04-first-sven",   de: "Dein erstes Foto mit Sven",                                  en: "Your first photo with Sven" },
   { key: "couple",       prefix: "05-couple",       de: "Dein Lieblingsfoto von den beiden zusammen",                 en: "Your favorite photo of the two of them together" },
-  { key: "memory",       prefix: "06-memory",       de: "Ein Foto, das eine schöne Erinnerung mit Judith oder Sven festhält", en: "A photo that captures a memory with either of them" },
-  { key: "wildcard",     prefix: "07-wildcard",     de: "Joker – ein Foto deiner Wahl",                               en: "Wildcard — any photo you’d like to share" },
+  { key: "wildcard",     prefix: "06-wildcard",     de: "Joker – ein Foto deiner Wahl",                               en: "Wildcard — any photo you’d like to share" },
 ];

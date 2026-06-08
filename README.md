@@ -17,15 +17,14 @@ Guest's phone → this site (GitHub Pages) → Google Apps Script → Drive fold
 - **Backend:** a Google Apps Script web app that runs as the couple's account.
   Guests never log in and install nothing.
 
-## The seven prompts
+## The six prompts
 
 1. Favorite photo with Judith
 2. Favorite photo with Sven
 3. First photo with Judith
 4. First photo with Sven
 5. Favorite photo of the two of them together
-6. A photo that captures a memory with either of them
-7. Wildcard — any photo
+6. Wildcard — any photo
 
 Each prompt is optional ("skip what doesn't apply").
 
