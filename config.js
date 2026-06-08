@@ -9,7 +9,7 @@ window.CONFIG = {
   // The wedding itself — shown on the welcome screen.
   event: {
     date: { de: "8. August 2026", en: "August 8, 2026" },
-    venue: "Schloss Namedy",
+    venue: "Burg Namedy",
   },
 
   // Photo-submission deadline ("please by …"). A week before the wedding gives
@@ -19,7 +19,7 @@ window.CONFIG = {
     en: "June 30, 2026",
   },
 
-  // Landing photo. Defaults to the Schloss Namedy courtyard (from the wedding
+  // Landing photo. Defaults to the Burg Namedy courtyard (from the wedding
   // site). Swap for a couple portrait anytime: drop a file in assets/ + point here.
   couplePhoto: "assets/venue-namedy.jpg",
 
